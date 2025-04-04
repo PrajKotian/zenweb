@@ -1,0 +1,141 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero .btn-primary {
+    background-color: #FF6F00; /* Bright orange */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #E65A00; /* Darker orange */
+}
+
+/* Sections */
+#survey,
+#about,
+#contact {
+    padding: 60px 0;
+    background-color: #f0f8ff; /* Light blue for section backgrounds */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #5a67d8; /* Indigo */
+    border-color: #5a67d8;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #3c4fb7; /* Darker indigo on hover */
+}
+
+.btn-light {
+    background-color: #FFFFFF;
+    color: #5a67d8;
+    border-color: #FFFFFF;
+}
+
+.btn-light:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Features Section */
+#features, 
+#testimonials {
+    padding: 60px 0;
+}
+
+.feature-icon img {
+    max-width: 50px;
+}
+
+/* Testimonials Section */
+.testimonial blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555555; /* Muted text color for testimonials */
+}
+
+/* Vision and Mission Section */
+#vision-mission {
+    background-color: #F7F7F7; /* Light gray background */
+    padding: 60px 0;
+}
+
+#vision-mission h2 {
+    font-size: 2.5rem;
+    color: #5a67d8; /* Indigo for headings */
+}
+
+#vision-mission h4 {
+    margin-top: 20px;
+    color: #003366; /* Navy blue for subheadings */
+}
+
+#vision-mission p,
+#vision-mission ul {
+    font-size: 1rem;
+    color: #555555; /* Muted gray for text */
+    line-height: 1.6;
+}
+
+#vision-mission li {
+    padding: 5px 0;
+}
+
+/* Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Service Image */
+.service-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Set a max width */
+    border-radius: 10px;
+}
+
+/* Modals */
+.modal-dialog {
+    max-width: 90%;
+    margin: auto;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Reduce height on smaller screens */
+    }
+
+    .btn-primary {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
